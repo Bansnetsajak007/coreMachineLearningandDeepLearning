@@ -60,7 +60,7 @@ def predict(X, b, w1):
 income_data = pd.read_csv('./Product_sales.csv')
 
 X = income_data['Income'].values
-X_normalize = (X - X.mean()) / X.std() # overwrites X with normalized values
+X_normalize = (X - X.mean()) / X.std()
 
 y = income_data['Bought'].values
 
